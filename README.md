@@ -12,5 +12,3 @@ Setelah nya silahkan ulik senidri :)
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/ryandijeremy/krenyes)
 
-
-# Telegram @erl_andi
