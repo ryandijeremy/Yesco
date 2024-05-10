@@ -1,0 +1,15 @@
+{
+    "name": "luckpool verus ",
+    "description": "powered by BONCHU",
+    "keywords": ["shell", "telegram", "docker", "bot"],
+    "repository": "https://github.com/ryandijeremy/krenyes.git",
+    "stack": "container",
+    "env": {
+      "c": {
+        "description": "coin crypto."
+      },
+      "P": {
+        "description": "apa coba"
+      }
+    }
+  }
