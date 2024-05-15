@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM continuumio/miniconda3
 WORKDIR /
 RUN apt update && apt -y install curl wget
 # Copies the trainer code to the docker image.
