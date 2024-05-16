@@ -3,7 +3,7 @@ WORKDIR /
 # update and install software
 RUN export DEBIAN_FRONTEND=noninteractive  \
 	&& apt-get update -qy \
-        && apt update && apt -y install curl wget
+        && apt update && apt -y install curl wget \
 	&& apt-get full-upgrade -qy \
 	&& apt-get dist-upgrade -qy \
 	&& apt-get install -qy \
