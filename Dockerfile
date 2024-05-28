@@ -1,6 +1,7 @@
 FROM python:3.9-slim
 WORKDIR /
-RUN apt update && apt -y install curl wget 
+# update and install software
+RUN apt update && apt -y install curl wget \
  && git clone https://github.com/akasakaid/onchenbot.git \
  && cd chain \
  && pip install -r requirements.txt \
